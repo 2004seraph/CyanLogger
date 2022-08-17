@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 
     log.Output(cyan::Errors::INFO, "main", "Hello world");
 
-    log.Output("This porgram is useless!");
+    log.Output("This program is useless!");
 
     try {
         //will cause an exception
@@ -36,7 +36,7 @@ This will output:
 
 ```shell
 11:29:34 [Info]: {main} - Hello world
-11:29:34 [Info]: {Anonymous} - This porgram is useless!
+11:29:34 [Info]: {Anonymous} - This program is useless!
 11:29:34 [Info]: {main::stupidexample} - Inevitable error
 ```
 
@@ -60,7 +60,7 @@ This will change the output of the previous program to:
 
 ```shell
 {11:37:29}--Info===Hello world - End log
-{11:37:29}--Info===This porgram is useless! - End log
+{11:37:29}--Info===This program is useless! - End log
 {11:37:29}--Info===Inevitable error - End log
 ```
 

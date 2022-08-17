@@ -22,6 +22,7 @@ int main(int argc, char* argv[]) {
     log.Output("This porgram is useless!");
 
     try {
+        //will cause an exception
         int x = std::any_cast<int>(std::any("apple"));
     } catch (...) {
         log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");

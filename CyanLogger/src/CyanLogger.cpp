@@ -8,7 +8,6 @@
 
 namespace cyan {
 	int ProgramExit(int exitCode) {
-
 		std::cout << std::endl << "======================";
 
 		switch (exitCode) {
@@ -27,6 +26,13 @@ namespace cyan {
 		return exitCode;
 	}
 
+#ifndef NOERRORCLASS
+	const std::string Errors::INFO = "Info";
+	const std::string Errors::WARN = "Warning";
+	const std::string Errors::ERROR = "Error";
+	const std::string Errors::FATAL = "FATAL";
+#endif // !NOERRORCLASS
+
 	Logger::Logger() {
 
 	}
@@ -39,7 +45,7 @@ namespace cyan {
 		schema = logSchema;
 	};
 
-	void Logger::Output(LogTypes type, std::string modulePath, std::string message)
+	void Logger::Output(std::string type, std::string modulePath, std::string message)
 	{
 		std::string finalOutput = schema;
 
@@ -54,7 +60,7 @@ namespace cyan {
 					std::regex_replace(//type
 						std::regex_replace(finalOutput, timeRegex, GetTimeString()),//time
 						typeRegex,
-						ErrorDecorators.at(type)
+						type
 					),
 					moduleRegex,
 					modulePath
@@ -68,18 +74,13 @@ namespace cyan {
 		std::cout << finalOutput << std::endl;
 	}
 
-	void Logger::Output(LogTypes type, std::string message)
+	void Logger::Output(std::string type, std::string message)
 	{
 		Output(type, noModule, message);
 	}
 
-	void Logger::Output(std::string modulePath, std::string message)
-	{
-		Output(INFO, modulePath, message);
-	}
-
 	void Logger::Output(std::string message) {
-		Output(INFO, noModule, message);
+		Output(defaultType, noModule, message);
 	};
 
 	std::string Logger::GetTimeString() {
@@ -103,7 +104,7 @@ namespace cyan {
 		messageHistory.clear();
 	}
 
-	bool Logger::SaveToFile(std::string path) {
+	bool Logger::SaveToFile(std::string path, std::string errorType) {
 		try {
 			std::ofstream LogFile(path);
 			for (auto const& i : messageHistory) {
@@ -112,10 +113,14 @@ namespace cyan {
 			LogFile.close();
 		}
 		catch (...) {
-			Output(ERROR, "LOGGER::SAVETOFILE", "Could not dump log to file.");
+			Output(errorType, "LOGGER::SAVETOFILE", "Could not dump log to file.");
 			return false;
 		}
 
 		return true;
 	};
+
+	bool Logger::SaveToFile(std::string path) {
+		return SaveToFile(path, "Error");
+	}
 }

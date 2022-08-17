@@ -13,6 +13,16 @@ namespace cyan {
 	/// <returns></returns>
 	int ProgramExit(int exitCode);
 
+#ifndef NOERRORCLASS
+	static struct Errors {
+	public:
+		static const std::string INFO;
+		static const std::string WARN;
+		static const std::string ERROR;
+		static const std::string FATAL;
+	};
+#endif // !NOERRORCLASS
+
 	class Logger {
 		std::list<std::string> messageHistory;
 
@@ -21,22 +31,7 @@ namespace cyan {
 
 		const std::string noModule = "Anonymous";
 
-	public:
-		static const enum LogTypes {
-			INFO = 0,
-			WARNING,
-			ERROR,
-			FATAL,
-			COUNT
-		};
-
-	private:
-		const std::map<LogTypes, std::string> ErrorDecorators = {
-			{INFO, "Info"},
-			{WARNING, "Warning"},
-			{ERROR, "Error"},
-			{FATAL, "FATAL"}
-		};
+		std::string defaultType = "Info";
 
 	public:
 		Logger();
@@ -45,9 +40,8 @@ namespace cyan {
 		void SetSchema(std::string logSchema);
 
 		void Output(std::string message);
-		void Output(std::string modulePath, std::string message);
-		void Output(LogTypes type, std::string message);
-		void Output(LogTypes type, std::string modulePath, std::string message);
+		void Output(std::string type, std::string message);
+		void Output(std::string type, std::string modulePath, std::string message);
 
 		/// <summary>
 		/// Returns the current time as a string in the format hh:mm:ss
@@ -73,5 +67,6 @@ namespace cyan {
 		/// <param name="path"></param>
 		/// <returns></returns>
 		bool SaveToFile(std::string path);
+		bool SaveToFile(std::string path, std::string errorType);
 	};
 }

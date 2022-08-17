@@ -59,3 +59,17 @@
 1	719	6824329297664429	CMakeFiles/CyanLogger.dir/src/CyanLogger.cpp.obj	15288649db3e263b
 719	762	6824329298059498	CyanLogger.lib	a5a0c2fefbab1879
 762	941	6824329299574511	tests/basic/basicTestApp.exe	64f79564d8c80a6
+3	505	6824337658564789	tests/basic/CMakeFiles/basicTestApp.dir/main.cpp.obj	978328cbd8a13551
+4	508	6824337900269246	tests/basic/CMakeFiles/basicTestApp.dir/main.cpp.obj	978328cbd8a13551
+0	789	6824338171240597	CMakeFiles/CyanLogger.dir/src/CyanLogger.cpp.obj	15288649db3e263b
+790	836	6824338171620662	CyanLogger.lib	a5a0c2fefbab1879
+836	1001	6824338173060908	tests/basic/basicTestApp.exe	64f79564d8c80a6
+0	687	6824338724865698	CMakeFiles/CyanLogger.dir/src/CyanLogger.cpp.obj	15288649db3e263b
+3	508	6824339285581130	tests/basic/CMakeFiles/basicTestApp.dir/main.cpp.obj	978328cbd8a13551
+0	682	6824339287306429	CMakeFiles/CyanLogger.dir/src/CyanLogger.cpp.obj	15288649db3e263b
+682	725	6824339287651488	CyanLogger.lib	a5a0c2fefbab1879
+725	850	6824339288746491	tests/basic/basicTestApp.exe	64f79564d8c80a6
+4	516	6824340425550068	tests/basic/CMakeFiles/basicTestApp.dir/main.cpp.obj	978328cbd8a13551
+1	703	6824340427410380	CMakeFiles/CyanLogger.dir/src/CyanLogger.cpp.obj	15288649db3e263b
+703	742	6824340427765443	CyanLogger.lib	a5a0c2fefbab1879
+742	869	6824340428825631	tests/basic/basicTestApp.exe	64f79564d8c80a6

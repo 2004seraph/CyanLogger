@@ -15,11 +15,11 @@ Include the header and instantiate a logger class. The main method will be `Logg
 #include <any>
 
 int main(int argc, char* argv[]) {
-	cyan::Logger log;
+    cyan::Logger log;
 
-	log.Output(cyan::Errors::INFO, "main", "Hello world");
+    log.Output(cyan::Errors::INFO, "main", "Hello world");
 
-	log.Output("This porgram is useless!");
+    log.Output("This porgram is useless!");
 
     try {
         int x = std::any_cast<int>(std::any("apple"));
@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
         log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");
     }
 
-	return 0;
+    return 0;
 }
 ```
 

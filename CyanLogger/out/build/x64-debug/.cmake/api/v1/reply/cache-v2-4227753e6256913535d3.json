@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "M:/VSSDPrograms/Microsoft/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lib.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/lib.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "m:/code/cpp/CyanLogger/CyanLogger/out/build/x64-Debug"
+			"value" : "m:/code/cpp/CyanLogger/CyanLogger/out/build/x64-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -63,7 +63,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "20"
+			"value" : "23"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -75,7 +75,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "21032501"
+			"value" : "22060601"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -87,7 +87,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "M:/VSSDPrograms/Microsoft/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -99,7 +99,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "M:/VSSDPrograms/Microsoft/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -111,7 +111,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "M:/VSSDPrograms/Microsoft/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -123,11 +123,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "M:/VSSDPrograms/Microsoft/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
+			"value" : "cl.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -235,11 +235,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "M:/VSSDPrograms/Microsoft/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
+			"value" : "cl.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "M:/code/cpp/CyanLogger/CyanLogger/out/install/x64-Debug"
+			"value" : "M:/code/cpp/CyanLogger/CyanLogger/out/install/x64-debug"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "M:/VSSDPrograms/Microsoft/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/link.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -551,11 +551,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "make program"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "M:\\VSSDPROGRAMS\\MICROSOFT\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : ""
+			"value" : "A C++ logging library"
 		},
 		{
 			"name" : "CMAKE_PROJECT_HOMEPAGE_URL",
@@ -712,6 +712,66 @@
 			],
 			"type" : "STATIC",
 			"value" : "CyanLogger"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "1.0.0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MINOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_PATCH",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -843,7 +903,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "M:/VSSDPrograms/Microsoft/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.23"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1038,22 +1098,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_TOOLCHAIN_FILE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "M:/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
-		},
-		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
 			"properties" : 
 			[
@@ -1079,7 +1123,19 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "M:/code/cpp/CyanLogger/CyanLogger/out/build/x64-Debug"
+			"value" : "M:/code/cpp/CyanLogger/CyanLogger/out/build/x64-debug"
+		},
+		{
+			"name" : "CyanLogger_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
 		},
 		{
 			"name" : "CyanLogger_SOURCE_DIR",
@@ -1092,226 +1148,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "M:/code/cpp/CyanLogger/CyanLogger"
-		},
-		{
-			"name" : "VCPKG_APPLOCAL_DEPS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Automatically copy dependencies into the output directory for executables."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-			"name" : "VCPKG_INSTALLED_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory which contains the installed libraries for each triplet"
-				}
-			],
-			"type" : "PATH",
-			"value" : "M:/vcpkg/vcpkg/installed"
-		},
-		{
-			"name" : "VCPKG_MANIFEST_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The path to the vcpkg manifest directory."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
-			"name" : "VCPKG_MANIFEST_INSTALL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Install the dependencies listed in your manifest:\n    If this is off, you will have to manually install your dependencies.\n    See https://github.com/microsoft/vcpkg/tree/master/docs/specifications/manifests.md for more info.\n"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "VCPKG_MANIFEST_MODE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Use manifest mode, as opposed to classic mode."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "VCPKG_PREFER_SYSTEM_LIBS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Appends the vcpkg paths to CMAKE_PREFIX_PATH, CMAKE_LIBRARY_PATH and CMAKE_FIND_ROOT_PATH so that vcpkg libraries/packages are found after toolchain/system libraries/packages."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "VCPKG_SETUP_CMAKE_PROGRAM_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable the setup of CMAKE_PROGRAM_PATH to vcpkg paths"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-			"name" : "VCPKG_TARGET_TRIPLET",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Vcpkg target triplet (ex. x86-windows)"
-				}
-			],
-			"type" : "STRING",
-			"value" : "x64-windows"
-		},
-		{
-			"name" : "VCPKG_VERBOSE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enables messages from the VCPKG toolchain for debugging purposes."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "X_VCPKG_APPLOCAL_DEPS_INSTALL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "(experimental) Automatically copy dependencies into the install target directory for executables. Requires CMake 3.14."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "X_VCPKG_APPLOCAL_DEPS_SERIALIZED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "(experimental) Add USES_TERMINAL to VCPKG_APPLOCAL_DEPS to force serialization."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "Z_VCPKG_BUILTIN_POWERSHELL_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
-		},
-		{
-			"name" : "Z_VCPKG_CHECK_MANIFEST_MODE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Making sure VCPKG_MANIFEST_MODE doesn't change"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "Z_VCPKG_CL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "M:/VSSDPrograms/Microsoft/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
-		},
-		{
-			"name" : "Z_VCPKG_POWERSHELL_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The path to the PowerShell implementation to use."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
-		},
-		{
-			"name" : "Z_VCPKG_PWSH_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "Z_VCPKG_PWSH_PATH-NOTFOUND"
-		},
-		{
-			"name" : "Z_VCPKG_ROOT_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Vcpkg root directory"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "M:/vcpkg/vcpkg"
-		},
-		{
-			"name" : "_VCPKG_INSTALLED_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory which contains the installed libraries for each triplet"
-				}
-			],
-			"type" : "PATH",
-			"value" : "M:/vcpkg/vcpkg/installed"
 		}
 	],
 	"kind" : "cache",

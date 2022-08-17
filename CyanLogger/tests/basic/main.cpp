@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 
+#define NOERRORCLASS
 #include "CyanLogger.hpp"
 
 #include <map>

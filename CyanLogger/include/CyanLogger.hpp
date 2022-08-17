@@ -13,7 +13,7 @@ namespace cyan {
 	/// <returns></returns>
 	int ProgramExit(int exitCode);
 
-#ifndef NOERRORCLASS
+#ifndef cyanLog_NOERRORCLASS
 	static struct Errors {
 	public:
 		static const std::string INFO;
@@ -21,7 +21,7 @@ namespace cyan {
 		static const std::string ERROR;
 		static const std::string FATAL;
 	};
-#endif // !NOERRORCLASS
+#endif // !cyanLog_NOERRORCLASS
 
 	class Logger {
 		std::list<std::string> messageHistory;

@@ -26,12 +26,12 @@ namespace cyan {
 		return exitCode;
 	}
 
-#ifndef NOERRORCLASS
+#ifndef cyanLog_NOERRORCLASS
 	const std::string Errors::INFO = "Info";
 	const std::string Errors::WARN = "Warning";
 	const std::string Errors::ERROR = "Error";
 	const std::string Errors::FATAL = "FATAL";
-#endif // !NOERRORCLASS
+#endif // !cyanLog_NOERRORCLASS
 
 	Logger::Logger() {
 

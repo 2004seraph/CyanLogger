@@ -77,6 +77,22 @@ log.SaveToFile("debug/log.txt");
 You can clear the message history with `Logger::ClearMessageHistory()`.
 You can also get the list of strings for yourself with `Logger::GetMessageHistory()`.
 
+### Provided error types class
+
+As seen in the provious examples, this library provides a class of error type strings for my convienince, while these are probably sufficient for most situations, you can always not include them by defining `cyanLog_NOERRORCLASS` before including `CyanLogger.hpp`.
+
+```cpp
+#define NOERRORCLASS
+#include "CyanLogger.hpp"
+
+int main(int argc, char* argv[]) {
+	cyan::Logger log;
+
+    //you may use your own system/convention of error types here.
+    log.Output("Output", "main", "Hello world");
+}
+```
+
 ## Building
 
 This library uses CMake, you can use cmake-gui to build it like any other library, there are no special settings.

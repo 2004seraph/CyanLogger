@@ -1,6 +1,6 @@
 # CyanLogger
  
-This is a C++17 single-header logging library made for my personal use, but you can use it if you want!
+This is a C++17 single-header logging library made for my personal use, but you can use it if you want! It helps me to standardise my console messages which results in a much cleaner console output.
 
 ## How to use
 
@@ -15,19 +15,20 @@ Include the header and instantiate a logger class. The main method will be `Logg
 #include <any>
 
 int main(int argc, char* argv[]) {
-	cyan::Logger log;
+    cyan::Logger log;
 
-	log.Output(cyan::Errors::INFO, "main", "Hello world");
+    log.Output(cyan::Errors::INFO, "main", "Hello world");
 
-	log.Output("This porgram is useless!");
+    log.Output("This porgram is useless!");
 
     try {
+        //will cause an exception
         int x = std::any_cast<int>(std::any("apple"));
     } catch (...) {
         log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");
     }
 
-	return 0;
+    return 0;
 }
 ```
 

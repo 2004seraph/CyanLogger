@@ -80,7 +80,7 @@ namespace cyan {
 	}
 
 	void Logger::Output(std::string message) {
-		Output(defaultType, noModule, message);
+		Output("Info", noModule, message);
 	};
 
 	std::string Logger::GetTimeString() {

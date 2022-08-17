@@ -31,8 +31,6 @@ namespace cyan {
 
 		const std::string noModule = "Anonymous";
 
-		std::string defaultType = "Info";
-
 	public:
 		Logger();
 		Logger(std::string logSchema);

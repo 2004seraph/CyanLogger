@@ -5,16 +5,42 @@
 
 #include <map>
 
+#include <any>
+
 
 int main(int argc, char* argv[]) {
+	//cyan::Logger log;
+
+	//log.Output(cyan::Errors::INFO, "main", "Hello world");
+	//log.Output("blah");
+
+	//log.Output(cyan::Errors::ERROR, "main", "I'm gay");
+
+	//log.SaveToFile("log.txt");
+
+	//try {
+	//	int r = std::any_cast<int>(std::any("apple"));
+	//}
+	//catch (...) {
+	//	log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");
+	//}
+
+	//return cyan::ProgramExit(1);
+
 	cyan::Logger log;
 
+	log.SetSchema("{%t}--%y===%o - End log");
+
 	log.Output(cyan::Errors::INFO, "main", "Hello world");
-	log.Output("blah");
 
-	log.Output(cyan::Errors::ERROR, "main", "I'm gay");
+	log.Output("This porgram is useless!");
 
-	log.SaveToFile("log.txt");
+	try {
+		int x = std::any_cast<int>(std::any("apple"));
+	}
+	catch (...) {
+		log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");
+	}
 
-	return cyan::ProgramExit(1);
+	return 0;
 }

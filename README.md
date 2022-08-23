@@ -80,10 +80,10 @@ You can also get the list of strings for yourself with `Logger::GetMessageHistor
 
 ### Provided error types class
 
-As seen in the provious examples, this library provides a class of error type strings for my convienince, while these are probably sufficient for most situations, you can always not include them by defining `cyanLog_NOERRORCLASS` before including `CyanLogger.hpp`.
+As seen in the provious examples, the class provides some const strings of error types for my convienince, while these are probably sufficient for most situations, you can always not include them by defining `cyanLog_NODEFAULTERRORS` before including `CyanLogger.hpp`.
 
 ```cpp
-#define NOERRORCLASS
+#define cyanLog_NODEFAULTERRORS
 #include "CyanLogger.hpp"
 
 int main(int argc, char* argv[]) {

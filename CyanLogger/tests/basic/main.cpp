@@ -30,9 +30,9 @@ int main(int argc, char* argv[]) {
 
 	cyan::Logger log;
 
-	log.SetSchema("{%t}--%y===%o - End log");
+	//log.SetSchema("{%t}--%y %o");
 
-	log.Output(cyan::Errors::INFO, "main", "Hello world");
+	log.Output(log.INFO, "main", "Hello world");
 
 	log.Output("This porgram is useless!");
 
@@ -40,8 +40,10 @@ int main(int argc, char* argv[]) {
 		int x = std::any_cast<int>(std::any("apple"));
 	}
 	catch (...) {
-		log.Output(cyan::Errors::INFO, "main::stupidexample", "Inevitable error");
+		log.Output(log.INFO, "main::stupidexample", "Inevitable error");
 	}
+
+	log.SaveToFile("epic.txt");
 
 	return 0;
 }

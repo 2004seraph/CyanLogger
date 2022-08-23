@@ -13,16 +13,6 @@ namespace cyan {
 	/// <returns></returns>
 	int ProgramExit(int exitCode);
 
-#ifndef cyanLog_NOERRORCLASS
-	static struct Errors {
-	public:
-		static const std::string INFO;
-		static const std::string WARN;
-		static const std::string ERROR;
-		static const std::string FATAL;
-	};
-#endif // !cyanLog_NOERRORCLASS
-
 	class Logger {
 		std::list<std::string> messageHistory;
 
@@ -32,6 +22,14 @@ namespace cyan {
 		const std::string noModule = "Anonymous";
 
 	public:
+		//Error types
+#ifndef cyanLog_NODEFAULTERRORS
+		static const std::string INFO;
+		static const std::string WARN;
+		static const std::string ERROR;
+		static const std::string FATAL;
+#endif // !cyanLog_NODEFAULTERRORS
+
 		Logger();
 		Logger(std::string logSchema);
 

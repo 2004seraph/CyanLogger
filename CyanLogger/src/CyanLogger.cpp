@@ -8,6 +8,7 @@
 
 namespace cyan {
 	int ProgramExit(int exitCode) {
+#ifdef _DEBUG
 		std::cout << std::endl << "======================";
 
 		switch (exitCode) {
@@ -22,16 +23,16 @@ namespace cyan {
 		std::cout << std::endl << std::endl << "press any key to exit console";
 
 		std::getchar();
-		
+#endif
 		return exitCode;
 	}
 
-#ifndef cyanLog_NOERRORCLASS
-	const std::string Errors::INFO = "Info";
-	const std::string Errors::WARN = "Warning";
-	const std::string Errors::ERROR = "Error";
-	const std::string Errors::FATAL = "FATAL";
-#endif // !cyanLog_NOERRORCLASS
+#ifndef cyanLog_NODEFAULTERRORS
+	const std::string Logger::INFO  = "Info";
+	const std::string Logger::WARN  = "Warn";
+	const std::string Logger::ERROR = "Error";
+	const std::string Logger::FATAL = "FATAL";
+#endif // !cyanLog_NODEFAULTERRORS
 
 	Logger::Logger() {
 

@@ -17,7 +17,7 @@ Include the header and instantiate a logger class. The main method will be `Logg
 int main(int argc, char* argv[]) {
     cyan::Logger log;
 
-    log.Output(cyan::Errors::INFO, "main", "Hello world");
+    log.Output(cyan::Logger::INFO, "main", "Hello world");
 
     log.Output("This program is useless!");
 

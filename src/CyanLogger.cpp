@@ -7,7 +7,7 @@
 #include <fstream>
 
 namespace cyan {
-	int ProgramExit(int exitCode) {
+	int ProgramExit(const int exitCode) noexcept {
 #ifdef _DEBUG
 		std::cout << std::endl << "======================";
 
@@ -34,19 +34,19 @@ namespace cyan {
 	const std::string Logger::FATAL = "FATAL";
 #endif // !cyanLog_NODEFAULTERRORS
 
-	Logger::Logger() {
+	Logger::Logger() noexcept {
 
 	}
 
-	Logger::Logger(std::string logSchema) {
+	Logger::Logger(const std::string logSchema) noexcept {
 		schema = logSchema;
 	}
 
-	void Logger::SetSchema(std::string logSchema) {
+	void Logger::SetSchema(const std::string logSchema) noexcept {
 		schema = logSchema;
 	};
 
-	void Logger::Output(std::string type, std::string modulePath, std::string message)
+	void Logger::Output(const std::string type, const std::string modulePath, const std::string message)
 	{
 		std::string finalOutput = schema;
 
@@ -75,12 +75,12 @@ namespace cyan {
 		std::cout << finalOutput << std::endl;
 	}
 
-	void Logger::Output(std::string type, std::string message)
+	void Logger::Output(const std::string type, const std::string message)
 	{
 		Output(type, noModule, message);
 	}
 
-	void Logger::Output(std::string message) {
+	void Logger::Output(const std::string message) {
 		Output("Info", noModule, message);
 	};
 
@@ -97,7 +97,7 @@ namespace cyan {
 		return FormatTime;
 	}
 
-	std::list<std::string>Logger::GetMessageHistory() {
+	std::list<std::string>Logger::GetMessageHistory() noexcept {
 		return messageHistory;
 	}
 
@@ -105,7 +105,7 @@ namespace cyan {
 		messageHistory.clear();
 	}
 
-	bool Logger::SaveToFile(std::string path, std::string errorType) {
+	bool Logger::SaveToFile(const std::string path, const std::string errorType) {
 		try {
 			std::ofstream LogFile(path);
 			for (auto const& i : messageHistory) {

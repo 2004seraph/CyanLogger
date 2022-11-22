@@ -11,7 +11,7 @@ namespace cyan {
 	/// </summary>
 	/// <param name="exitCode"></param>
 	/// <returns></returns>
-	int ProgramExit(int exitCode);
+	int ProgramExit(const int exitCode) noexcept;
 
 	class Logger {
 		std::list<std::string> messageHistory;
@@ -30,14 +30,14 @@ namespace cyan {
 		static const std::string FATAL;
 #endif // !cyanLog_NODEFAULTERRORS
 
-		Logger();
-		Logger(std::string logSchema);
+		Logger() noexcept;
+		Logger(std::string logSchema) noexcept;
 
-		void SetSchema(std::string logSchema);
+		void SetSchema(std::string logSchema) noexcept;
 
-		void Output(std::string message);
-		void Output(std::string type, std::string message);
-		void Output(std::string type, std::string modulePath, std::string message);
+		void Output(const std::string message);
+		void Output(const std::string type, const std::string message);
+		void Output(const std::string type, const std::string modulePath, const std::string message);
 
 		/// <summary>
 		/// Returns the current time as a string in the format hh:mm:ss
@@ -49,7 +49,7 @@ namespace cyan {
 		/// Returns the entire message history
 		/// </summary>
 		/// <returns></returns>
-		std::list<std::string> GetMessageHistory();
+		std::list<std::string> GetMessageHistory() noexcept;
 
 		/// <summary>
 		/// Clears the entire message history
@@ -62,7 +62,7 @@ namespace cyan {
 		/// </summary>
 		/// <param name="path"></param>
 		/// <returns></returns>
-		bool SaveToFile(std::string path);
-		bool SaveToFile(std::string path, std::string errorType);
+		bool SaveToFile(const std::string path);
+		bool SaveToFile(const std::string path, const std::string errorType);
 	};
 }

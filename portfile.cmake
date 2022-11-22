@@ -1,7 +1,7 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO sammot/cyanlogger
-  REF 4af6fcdcda1dfc3681e8c1ff3a7dc4984e0ba98e
+  REF 66326ec7cb18cf943e7cc2ad7694bd04276338ad
   SHA512 fa4bc52889cff100fbd536bd929d474e2b4abda75049bfcbeaf0f13249ec0d365c899c391aa18c12e6e038b1a240012f8392254b099e41accde5461d124183a7
   HEAD_REF main
 )
